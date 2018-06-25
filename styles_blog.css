@@ -36,6 +36,9 @@ h2 {
 
 .author-text {
   font-size: 22px;
+  float: left;
+  margin-top: 35px;
+  margin-left: 10px;
 }
 
 .container {
@@ -47,6 +50,7 @@ h2 {
   width: 75%;
   float: left;
   padding-right: 30px;
+  position: relative; /*Before positioning the date, the position style was added to the parent of the date element*/
 }
 
 .other-posts {
@@ -57,6 +61,28 @@ h2 {
 .author-box {
   border-top: 1px solid #808080;
   padding-top: 20px;
+}
+
+.other {
+  margin-bottom: 40px;
+}
+
+.author-box img {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  float: left;
+}
+
+.blog-post img {
+  height: 150px;
+  width: auto;
+}
+
+.date {
+  position: absolute;
+  top: 10px;
+  right: 30px;
 }
 
 /* I think since the container width is 1140px, and the divs with classes
